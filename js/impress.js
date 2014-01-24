@@ -791,6 +791,13 @@
         
 })(document, window);
 
+document.addEventListener("keydown", function(e) {
+    if (e.keyCode == 27) {
+        impress().goto('overview');
+    }
+}, false);
+
+
 // THAT'S ALL FOLKS!
 //
 // Thanks for reading it all.
